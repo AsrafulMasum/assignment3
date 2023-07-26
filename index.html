@@ -35,12 +35,15 @@
     <header class="max-w-screen-xl lg:mx-auto mt-10 mb-40 md:mx-8 mx-4">
 
       <!-- navbar section -->
-      <nav class="navbar md:bg-nav-bg rounded-full md:px-4 flex-row-reverse md:flex-row mb-14">
+      <nav class="navbar md:bg-nav-bg rounded-full md:px-4 flex-row-reverse lg:flex-row mb-14">
 
-        <div class="navbar-end md:navbar-start md:justify-start">
-          <div class="dropdown dropdown-end">
+        <div class="navbar-end md:justify-end lg:justify-start">
+          <div class="dropdown dropdown-end md:dropdown-right">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg> -->
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-56">
               <li><a>Home</a></li>
@@ -74,9 +77,9 @@
           </a>
         </div>
 
-        <div class="navbar-end hidden md:flex">
+        <div class="navbar-start lg:navbar-end hidden md:flex lg:justify-end">
           <div class="flex items-center justify-center">
-            <input type="text" placeholder="Search here" class="input rounded-l-full w-36 lg:w-80" />
+            <input type="text" placeholder="Search here" class="input rounded-l-full w-36 lg:w-80 focus:outline-none" />
             <button class="h-[48px] rounded-r-full pr-4 pt-1 cursor-pointer bg-white">
               <span class="material-symbols-rounded text-xl">
                 search
@@ -98,8 +101,8 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content -mt-16">
                 <div class="max-w-md">
-                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply highly quality organic products</p>
+                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your <span class="text-nav-bg">doorstep</span></h1>
+                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply high quality organic products</p>
                   <button class="btn bg-nav-bg border-0 text-white hover:text-h-color">Shop Now</button>
                 </div>
               </div>
@@ -118,8 +121,8 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content -mt-16">
                 <div class="max-w-md">
-                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply highly quality organic products</p>
+                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your <span class="text-nav-bg">doorstep</span></h1>
+                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply high quality organic products</p>
                   <button class="btn bg-nav-bg border-0 text-white hover:text-h-color">Shop Now</button>
                 </div>
               </div>
@@ -138,8 +141,8 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content -mt-16">
                 <div class="max-w-md">
-                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply highly quality organic products</p>
+                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your <span class="text-nav-bg">doorstep</span></h1>
+                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply high quality organic products</p>
                   <button class="btn bg-nav-bg border-0 text-white hover:text-h-color">Shop Now</button>
                 </div>
               </div>
@@ -158,8 +161,8 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content -mt-16">
                 <div class="max-w-md">
-                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply highly quality organic products</p>
+                  <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your <span class="text-nav-bg">doorstep</span></h1>
+                  <p class="mb-5 w-1/2 mx-auto md:w-full">We supply high quality organic products</p>
                   <button class="btn bg-nav-bg border-0 text-white hover:text-h-color">Shop Now</button>
                 </div>
               </div>
@@ -174,7 +177,7 @@
 
         </div>
 
-        <div class="h-36 bg-white max-w-screen-lg rounded-lg justify-evenly hidden md:flex lg:gap-24 items-center lg:absolute left-[4.5rem] lg:left-48 -bottom-16 shadow-md px-6">
+        <div class="h-36 bg-white max-w-screen-lg rounded-lg justify-evenly mt-10 hidden md:flex lg:gap-24 items-center lg:absolute left-[4.5rem] lg:left-48 -bottom-16 shadow-md px-6">
           <div class="flex flex-col justify-center items-center">
             <img src="./images/fruit1.png" alt="" class="w-24">
             <p>Grapes</p>
@@ -478,13 +481,14 @@
           <button class="btn bg-nav-bg text-white hover:text-h-color">See All</button>
         </div>
       </section>
+
       <!-- team section -->
       <section class="max-w-screen-xl lg:mx-auto mt-10 mb-40 md:mx-8 mx-4">
         <div class="hero rounded-lg" style="background-image: url(./images/team.png);">
           <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
           <div class="hero-content text-center text-neutral-content flex flex-col justify-center items-center">
             <div class="max-w-xl mt-10">
-              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+              <h1 class="mb-5 text-5xl font-bold">Meet all our team <span class="text-nav-bg">members</span></h1>
               <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-20 mb-10">
@@ -492,7 +496,7 @@
               <div class="flex flex-col gap-4 justify-center items-center">
                 <img src="./images/member1.png" alt="" class="lg:w-1/2">
                 <div>
-                  <h2 class="font-bold text-white">Awlad Hossain</h2>
+                  <h2 class="font-bold text-xl text-white">Awlad Hossain</h2>
                   <p class="text-white">Fruits Expert</p>
                 </div>
                 <div class="flex justify-center items-center gap-4">
@@ -505,7 +509,7 @@
               <div class="flex flex-col gap-4 justify-center items-center">
                 <img src="./images/member2.png" alt="" class="lg:w-1/2">
                 <div>
-                  <h2 class="font-bold text-white">Safia Chowdhury</h2>
+                  <h2 class="font-bold text-xl text-white">Safia Chowdhury</h2>
                   <p class="text-white">Fruits Expert</p>
                 </div>
                 <div class="flex justify-center items-center gap-4">
@@ -518,7 +522,7 @@
               <div class="flex flex-col gap-4 justify-center items-center">
                 <img src="./images/member3.png" alt="" class="lg:w-1/2">
                 <div>
-                  <h2 class="font-bold text-white">Rokib Hossain</h2>
+                  <h2 class="font-bold text-xl text-white">Rokib Hossain</h2>
                   <p class="text-white">Fruits Expert</p>
                 </div>
                 <div class="flex justify-center items-center gap-4">
@@ -531,7 +535,7 @@
               <div class="flex flex-col gap-4 justify-center items-center">
                 <img src="./images/member4.png" alt="" class="lg:w-1/2">
                 <div>
-                  <h2 class="font-bold text-white">Chaity</h2>
+                  <h2 class="font-bold text-xl text-white">Chaity</h2>
                   <p class="text-white">Fruits Expert</p>
                 </div>
                 <div class="flex justify-center items-center gap-4">
@@ -545,6 +549,7 @@
           </div>
         </div>
       </section>
+
       <!-- why us section -->
       <section class="max-w-screen-xl lg:mx-auto mt-10 mb-40 md:mx-8 mx-4">
         <!-- section title -->
@@ -565,33 +570,33 @@
 
           <div class="flex flex-col justify-center items-center gap-12 mt-6">
 
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/group1.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-1">
                 <h3 class="text-xl font-bold text-h-color">Dedicated Team</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/love1.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-1">
                 <h3 class="text-xl font-bold text-h-color">Fresh is Best</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/gift-box.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start gap-1">
                 <h3 class="text-xl font-bold text-h-color">Gift Certificates</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -606,33 +611,33 @@
 
           <div class="flex flex-col justify-center items-center gap-12 mt-6">
 
-            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/fruit.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-1">
                 <h3 class="text-xl font-bold text-h-color">Integrated Supplier</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/ice-cream.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-1">
                 <h3 class="text-xl font-bold text-h-color">Sustainable Practice</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-6 shadow-md rounded-lg p-4">
+            <div class="flex flex-col md:flex-row lg:flex-row-reverse justify-center items-center gap-3 shadow-md rounded-lg p-4">
               <div class="w-20 h-20 lg:w-14 lg:h-14 flex items-center justify-center bg-[#1212121A] rounded-full">
                 <img src="./images/New folder/like.png" alt="">
               </div>
-              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-2">
+              <div class="w-72 flex flex-col justify-center items-center md:items-start lg:items-end gap-1">
                 <h3 class="text-xl font-bold text-h-color">The Benefits Only</h3>
                 <hr class="w-24 border-[1px]">
                 <p class="text-p-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
